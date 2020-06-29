@@ -1,0 +1,10 @@
+extends layouts/main
+
+block content
+  .movie-title
+    h1= movie.title
+  .movie-summary
+    p= movie.summary
+  .movie-genres
+    each item in movie.genres
+      li= item

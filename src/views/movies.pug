@@ -1,0 +1,10 @@
+extends layouts/main
+include mixins/movieBlock
+
+block content
+  .movies-header
+    h1= pageTitle
+  .movies-container
+    each item in movies
+      +movieBlock(item)
+
